@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+:root {
+    --cor-primaria: #217e04;
+    --cor-secundaria: #58e72c;
+
+    --fonte-principal: "Courgette", cursive;
+}
+
+* {
+    margin: 2;
+    padding: 2;
+}
+
+body { 
+    background-color: var(--cor-primaria);
+}
+
+.conteudo__apresentacao {
+    font-family: var(--fonte-principal);
+}
+
+.conteudo__apresentacao__titulo {
+    color: var(--cor-secundaria);
+    font-size: 3rem;
+}
+
+.conteudo__apresentacao__paragrafo {
+    font-size: 1.5rem;
+}
+
+.foto {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   justify-content: space-evenly; 
+}
+
+.conteudo__foto {
+    width: 45%;
+    border-radius: 1rem;
+    
+}
+
+.rodape {
+    text-align: center;
+}
+
+@media (max-width: 425px) {
+
+    .conteudo__apresentacao__titulo {
+        font-size: 2.8rem;
+    }
+
+    .conteudo__apresentacao__paragrafo {
+        font-size: 1.3rem;
+    }
+   
+}
